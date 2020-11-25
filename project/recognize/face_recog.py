@@ -6,9 +6,6 @@ import face_recognition
 # Import your video file
 video_file = cv2.VideoCapture(0)
 
-# Capture the length based on the frame.
-#length = int(video_file.get(cv2.CAP_PROP_FRAME_COUNT))
-
 # We need to add all the faces that we want our code to recognize
 image_monnish = face_recognition.load_image_file(os.path.abspath("recognize/images/monnish.jpg"))
 image_lohit = face_recognition.load_image_file(os.path.abspath("recognize/images/lohit.jpeg"))
